@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>color changes</h3>
+    <select name="change" id="change" onchange="colorchange()">
+        <option> select color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+
+    </select>
+</body>
+<script> function colorchange() {
+        let change = document.getElementById('change').value;
+        document.body.style.backgroundColor = change;
+
+    } </script>
+
+</html>
